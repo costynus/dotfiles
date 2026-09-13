@@ -1,31 +1,27 @@
 # dotfiles
 
-Мои персональные конфигурации, собранные в одном репозитории с помощью Git submodules.
+Personal configuration files, managed as Git submodules.
 
-## Состав
+## Included
 
-- [`kitty-config`](./kitty-config) — конфигурация терминала Kitty.
-- [`nvim`](./nvim) — конфигурация Neovim.
+- [`kitty-config`](./kitty-config) — Kitty configuration.
+- [`nvim`](./nvim) — Neovim configuration.
 
-Каждая конфигурация остаётся самостоятельным репозиторием со своей историей и удалённым репозиторием.
+Each configuration remains an independent repository with its own history and remote.
 
-## Клонирование
-
-Клонируйте репозиторий вместе со всеми submodules:
+## Clone
 
 ```bash
 git clone --recurse-submodules git@github.com:costynus/dotfiles.git
 ```
 
-Если репозиторий уже был клонирован без submodules, инициализируйте их так:
+For an existing clone:
 
 ```bash
 git submodule update --init --recursive
 ```
 
-## Обновление конфигураций
-
-Сначала обновите нужный submodule, затем зафиксируйте новую ссылку в `dotfiles`:
+## Update a submodule
 
 ```bash
 cd kitty-config
@@ -37,4 +33,4 @@ git commit -m "Update kitty-config submodule"
 git push
 ```
 
-Для `nvim` принцип такой же.
+Use the same process for `nvim`.
