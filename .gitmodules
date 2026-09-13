@@ -1,0 +1,8 @@
+[submodule "nvim"]
+	path = nvim
+	url = git@github.com:costynus/nvim.git
+	branch = trunk
+[submodule "kitty-config"]
+	path = kitty-config
+	url = git@github.com:costynus/kitty-config.git
+	branch = trunk
