@@ -20,17 +20,3 @@ For an existing clone:
 ```bash
 git submodule update --init --recursive
 ```
-
-## Update a submodule
-
-```bash
-cd kitty-config
-git pull origin trunk
-
-cd ..
-git add kitty-config
-git commit -m "Update kitty-config submodule"
-git push
-```
-
-Use the same process for `nvim`.
