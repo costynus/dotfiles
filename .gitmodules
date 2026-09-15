@@ -6,3 +6,7 @@
 	path = kitty-config
 	url = git@github.com:costynus/kitty-config.git
 	branch = trunk
+[submodule "ghostty"]
+	path = ghostty
+	url = https://github.com/costynus/ghostty.git
+	branch = trunk
